@@ -1,0 +1,10 @@
+<?php if(isset($this->errorMessage)):?>
+	<p><?php echo $this->errorMessage?></p>
+<?php endif?>
+<form method="POST">
+	<input name="login"><br>
+	<input type="password" name="password"><br>
+	<input type="submit">
+</form>
+
+<a href="<?php echo $this->baseUrl('controller/action') ?>">LINK</a>
