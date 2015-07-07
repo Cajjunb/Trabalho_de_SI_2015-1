@@ -1,0 +1,39 @@
+.wrapper{
+	min-height: 800px;
+	padding:0px;
+	margin:0px;
+	background: url("../img/template.png");
+}
+
+body{
+	margin:0px;
+}
+
+.login-callimage{
+  margin-left: 35%;
+}
+
+font
+
+.login-form{
+	position: absolute;
+	right: 10px;
+	top: 10%;
+}
+
+.login-header{
+  height: 50px;
+}
+
+
+.login-left{
+	  height: 800px;
+}
+
+.login-right{
+	  height: 800px;
+}
+
+.login-callforaction{
+	padding: 30px;
+}

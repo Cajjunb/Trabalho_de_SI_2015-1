@@ -8,5 +8,16 @@ abstract class Trabalho_Controller_Action extends Zend_Controller_Action{
 				$this->redirect("/login");
 		}
 	}
+
+	public function validaVarchar($sizeof,$data){
+		$flag = true;
+		if(sizeof($data)>$sizeof){
+			$flag = false;
+		}
+		else if(ctype_alnum($data)){
+			$flag = false;
+		}
+		return flag;
+	}
 }
 ?>

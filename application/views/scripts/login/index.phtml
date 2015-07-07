@@ -1,10 +1,22 @@
-<?php if(isset($this->errorMessage)):?>
-	<p><?php echo $this->errorMessage?></p>
-<?php endif?>
-<form method="POST">
-	<input name="login"><br>
-	<input type="password" name="password"><br>
-	<input type="submit">
-</form>
-
-<a href="<?php echo $this->baseUrl('controller/action') ?>">LINK</a>
+<?php echo $this->render("include/template.phtml")?>
+	<div class="col-md-9 login-left">
+		<div class="col-md-12 login-callforaction">
+			<h1>
+				TESTE QUE TIPO DE RISCOS VOCÊ CORRE COMO USUÁRIO DA WEB!
+			</h1>
+			<div class="col-md-12 login-callimage">
+				<img src="<?php echo $this->baseUrl('img/callforaction.jpg'); ?>">
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3 login-right">
+		<div class="login-form col-md-12">
+			<form method="POST">
+				<input name="login"><br>
+				<input type="password" name="password"><br>
+				<input type="submit">
+			</form>
+			<a href="<?php echo $this->baseUrl('controller/action') ?>">LINK</a>
+		</div>
+	</div>
+<?php echo $this->render("include/footer.phtml")?>
